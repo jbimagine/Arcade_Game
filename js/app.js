@@ -56,17 +56,19 @@ Player.prototype.render = function() {
 
 Player.prototype.handleInput = function(direction) {
 	if (direction == 'left' && this.x > 0) {
-		this.x -= 50;
+		this.x -= 100;
 	}
 	if (direction == 'right' && this.x < 400) {
-		this.x += 50;
+		this.x += 100;
 	}
 	if (direction == 'up' && this.y > -25) {
-		this.y -= 50;
+		this.y -= 80;
 	}
-	if (direction == 'down' && this.y < 425) {
-		this.y += 50;
+	if (direction == 'down' && this.y < 375) {
+		this.y += 80;
 	}
+
+	console.log(this.y);
 };
 
 Player.prototype.reset = function() {
