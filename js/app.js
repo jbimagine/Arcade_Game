@@ -10,26 +10,24 @@ let Enemy = function(x, y) {
 	this.y = y;
 };
 
-let enemyPosInit = Math.floor(Math.random() * -300 + -55);
-console.log(enemyPosInit);
-
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
 Enemy.prototype.update = function(dt) {
-	// You should multiply any movement by the dt parameter
-	// which will ensure the game runs at the same speed for
-	// all computers.
-
 	//generate a random number for the enemy speed
 	let randomSpeed = Math.floor(Math.random() * 400 + 75);
 
+	//multiple the movemnent by the dt parameter
 	this.x += randomSpeed * dt;
+
 	if (this.x > 510) {
 		//generate a random number for the position of the
 		//enemies after they leave the screen
-		let enemyPosition = Math.floor(Math.random() * -400 + -60);
+		let enemyPosition = Math.floor(Math.random() * -400 + -100);
 		this.x = enemyPosition;
-		//console.log(this.x);
+	}
+	//reset the player if it collides with the enemy
+	if (this.x < player.x + 30 && this.x + 60 > player.x && this.y < player.y + 60 && this.y + 40 > player.y) {
+		player.reset();
 	}
 };
 
@@ -38,9 +36,7 @@ Enemy.prototype.render = function() {
 	ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
-// Now write your own player class
-// This class requires an update(), render() and
-// a handleInput() method.
+//Player class
 let Player = function(x, y) {
 	this.sprite = 'images/char-boy.png';
 	this.x = x;
@@ -71,7 +67,6 @@ Player.prototype.handleInput = function(direction) {
 	if (direction == 'down' && this.y < 425) {
 		this.y += 50;
 	}
-	console.log(this.y);
 };
 
 Player.prototype.reset = function() {
