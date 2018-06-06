@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Effective JavaScript: Frogger</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
+
 <body>
+
+    <div id="win-modal-cntnr">
+        <div id="win-modal-box">
+            <div id="win-title-cntnr">
+                <div id="win-title">
+                    Congrats!!
+                    <div id="win-sub-title">You've won!!</div>
+                </div>
+            </div>
+            <button id="restart-btn">
+                Restart
+            </button>
+        </div>
+    </div>
+
+    <div id="header-cntnr">
+        <div id="lives-cntnr">
+            <div id="lives-title">Lives</div>
+            <div>
+                <img src="/images/Heart.png" alt="life" class="lives">
+            </div>
+            <div>
+                <img src="/images/Heart.png" alt="life" class="lives">
+            </div>
+            <div>
+                <img src="/images/Heart.png" alt="life" class="lives">
+            </div>
+        </div>
+    </div>
+
+    <div id="canvas-cntnr">
+
+    </div>
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
 </body>
+
 </html>
