@@ -1,10 +1,10 @@
-# Project Title
+# Arcade Game-Frogger Clone
 
-Arcade Game - Frogger Clone 
+Part of the Udacity front end nanodegree program.  A clone similar to that of the legenardy Frogger game!
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+To get started, you can download or clone this repository to your local drive
 
 ### Prerequisites
 
@@ -51,8 +51,10 @@ Left arrow to the left
 Right arrow to the right
 
 ```
-Navigate pass the enemies to get to the water and win the game.  Option to restart after winning
+Winning and Losing the game
 ```
+
+Navigate pass the enemies to get to the water and win the game.  Option to restart after winning
 You get three lives.  If you run out the game will ask you if you want to restart
 ```
 ## Built With
