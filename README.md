@@ -1,6 +1,77 @@
-frontend-nanodegree-arcade-game
-===============================
+# Project Title
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+Arcade Game - Frogger Clone 
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+You will need a code editor and web browser of your choice
+
+Some code editor examples are as follows:  
+
+```
+VS Code:(https://code.visualstudio.com/)
+Atom:(https://atom.io/)
+Sublime:(https://www.sublimetext.com/)
+```
+
+Some web browser examples are as follows:
+```
+
+Chrome:(https://www.google.com/chrome/)
+Firefox:(https://www.mozilla.org/en-US/firefox/new/)
+Opera:https://www.opera.com/
+```
+
+### Installing
+
+
+Initialize using a local server
+
+```
+If using Visual Studio Code, once you have the package in the code editor, right click on index.html and click on Open With Live Server.
+
+```
+
+```
+Game should load in the browser, and now, get ready to bob and weave, bob and weave!!
+```
+
+### Gameplay and controls
+
+Use the arrow keys to move the character:
+
+```
+Up arrow moves the player up
+Down arrow moves the player down
+Left arrow to the left
+Right arrow to the right
+
+```
+Navigate pass the enemies to get to the water and win the game.  Option to restart after winning
+```
+You get three lives.  If you run out the game will ask you if you want to restart
+```
+## Built With
+
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) -Javascript language
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Cascading Style Sheets
+
+
+
+## Authors
+
+* **Joe Bates** - *All Work* - [JBImagine](https://github.com/jbimagine/memory_magic)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Salma my mentor
+* Udacity FEND network
+
